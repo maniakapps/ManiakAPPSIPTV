@@ -7,16 +7,16 @@ $title = "ManiakAPPS IPTV streamer";
 $site_url = "maniakapps.com";
 
 //Site Description
-$description = "We made it simplier to stream your favorite prorgams";
+$description = "We made it simplier to stream your favorite programs";
 
 //Watermark image
-$watermarkImage = "";
+$watermarkImage = "img/favicon.ico";
 
 //Watermark link
-$watermarkLink = "";
+$watermarkLink = "https://maniakapps.com";
 
 //Google Analytics tag ID
-$gaCode = "";
+$gaCode = "331130962";
 
 //Preroll Ads Video (.mp4)
 $prerollAds = "";
@@ -25,5 +25,5 @@ $prerollAds = "";
 $prerollTime = 5;
 
 //Preroll Ads External Link
-$prerollLink = "";
+$prerollLink = "https://maniakapps.com";
 ?>

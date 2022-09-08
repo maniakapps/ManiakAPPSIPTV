@@ -1,3 +1,7 @@
+let player;
+player.configure = function (param) {
+
+}
 (function($) {
   "use strict"; // Start of use strict
 
@@ -11,8 +15,9 @@
   // Prevent the content wrapper from scrolling when the fixed side navigation hovered over
   $('body.fixed-nav .sidebar').on('mousewheel DOMMouseScroll wheel', function(e) {
     if ($window.width() > 768) {
-      var e0 = e.originalEvent,
-        delta = e0.wheelDelta || -e0.detail;
+      const e0 = e.originalEvent,
+          delta = e0.wheelDelta || -e0.detail;
+      e0.wheelDelta = undefined;
       this.scrollTop += (delta < 0 ? 1 : -1) * 30;
       e.preventDefault();
     }
@@ -88,7 +93,8 @@
     $(document).ready(function() {
     $(".channel").click(function(){
         let channel =$(this).data("value");
-        player.configure({
+      let player;
+      player.configure({
             source: channel,
         });
         player.play();
